@@ -7,6 +7,7 @@ def sort(target):
 # targetのi番目以降の最初打を見つけi番目の値より小さい場合交換する
 def select_min(target, i):
     min = i
+    # rangeは終了値実行jされないためlen(target)で問題無い
     for j in range(i+1, len(target)):
         if target[min] > target[j]:
             min = j

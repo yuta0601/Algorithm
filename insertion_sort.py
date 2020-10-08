@@ -7,6 +7,7 @@ def insert(target, i):
     temp = target[i]
     # スタート値: i-1, 終了値: -1, step: -1
     # i-1から0まで逆順に見ていく
+    # iのスタート値が1のため終了値を-1にして0まで見るようにしている
     for j in range(i-1, -1, -1):
         # tempより大きい値は右にひとつずらす
         if temp < target[j]:
