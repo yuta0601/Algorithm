@@ -1,4 +1,4 @@
-def sort(target):
+def insertion_sort(target):
     for i in range(1, len(target)):
         print(f'{target}変換対象：{target[i]}')
         insert(target, i)
@@ -24,5 +24,5 @@ def insert(target, i):
 if __name__=='__main__':
     A = [6, 3, 8, 5, 7]
     print(f'ソート前:{A}')
-    sort(A)
+    insertion_sort(A)
     print(f'ソート後:{A}')
