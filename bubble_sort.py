@@ -1,5 +1,5 @@
 
-def sort(target):
+def bubble_sort(target):
     for i in range(0, len(target)-1):
         if modify_order(target, i) == 0:
             break
@@ -15,5 +15,5 @@ def modify_order(target, i):
 
 if __name__=='__main__':
     A = [3, 2, 9, 4, 8, 1]
-    sort(A)
+    bubble_sort(A)
     print(A)

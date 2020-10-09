@@ -1,6 +1,6 @@
 
 # 選択ソートをコード化
-def sort(target):
+def selection_sort(target):
     # 一番最後の項は実行する必要が無いためlen(target)-1
     for i in range(0, len(target)-1):
         select_min(target, i)
@@ -17,7 +17,5 @@ def select_min(target, i):
 
 if __name__=='__main__':
     A = [8, 4, 3, 9, 6]
-
-    sort(A)
-
+    selection_sort(A)
     print(A)
