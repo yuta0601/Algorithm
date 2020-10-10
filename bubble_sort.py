@@ -6,6 +6,7 @@ def bubble_sort(target):
 
 def modify_order(target, i):
     exchange = 0
+    # targetの最終項からi+1まで繰返し
     for j in range(len(target)-1, i, -1):
         if target[j-1] > target[j]:
             target[j-1], target[j] = target[j], target[j-1]
